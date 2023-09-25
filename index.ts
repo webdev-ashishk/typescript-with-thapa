@@ -1,20 +1,18 @@
-// TODO 1: Write a Program to add two numbers ?
-// TODO 2: How to catch  Errors & solve it ?
-// TODO 3: TS Configuration file ?
+// First Assignment Question >>>>>>>>>>>>
+var longText: string =
+  "I am Learning Typescript from World Best Typescript course By Thapa";
 
-// NOTE: When you find error in typescript code don't compile successfully
+var shortText: string = longText.slice(0, 10);
+console.log(shortText);
+// Second Assignment Question >>>>>>>>>>>
 
-// ------This is code is valid in javascript but now in typescipt------->
-// function sum(a, b) {
-//   const result = a + b;
-//   console.log(result);
-// }
-// sum(10, 20);
-// sum("ashish", 20);
-// sum(10, "ashish");
+var str1: string = "techicalThapa";
+var str2: string = "thapa";
+var areEqual: boolean = str1 == str2;
+console.log(areEqual);
 
-function sum(a: number, b: number): number {
-  return a + b;
-}
-
-console.log(sum(10, "ashish"));
+// Third Assignment Question >>>>>>>>>>
+var product: string = "TypeScriptCourse";
+var price: number = 100;
+var result: any = `The product is ${product} and priced at ${price} $`;
+console.log(result);
