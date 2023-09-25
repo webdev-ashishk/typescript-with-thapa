@@ -1,18 +1,40 @@
-// First Assignment Question >>>>>>>>>>>>
-var longText: string =
-  "I am Learning Typescript from World Best Typescript course By Thapa";
+// Lec-5
 
-var shortText: string = longText.slice(0, 10);
-console.log(shortText);
-// Second Assignment Question >>>>>>>>>>>
+// write typescript function called isDivisibleBy4And8 that takes a number as a parameter and returns true if the number is divisible by 4 and 8
 
-var str1: string = "techicalThapa";
-var str2: string = "thapa";
-var areEqual: boolean = str1 == str2;
-console.log(areEqual);
+// If any number which is divisible by 8 also divisible by 4 {HINT}
+/*
 
-// Third Assignment Question >>>>>>>>>>
-var product: string = "TypeScriptCourse";
-var price: number = 100;
-var result: any = `The product is ${product} and priced at ${price} $`;
-console.log(result);
+var num: number = 1280;
+
+function isDivisibleBy4(a: number): boolean {
+  var last2DigitString = String(a).slice(-2);
+  var last3DigitString = String(a).slice(-3);
+  var last2DigitNumber = Number(last2DigitString);
+  var last3DigitNumber = Number(last3DigitString);
+  // console.log(typeof last2DigitNumber);
+  return last2DigitNumber % 4 === 0 && last3DigitNumber % 8 === 0;
+}
+
+console.log(isDivisibleBy4(num));
+
+
+*/
+// =============== BigInt ===================>
+
+let bigNumber: bigint = 9007199254740992n;
+let anotherBigInt: bigint = BigInt("900719925474099252040240");
+// console.log(anotherBigInt);
+// >>>>>>>>>>>>>Assignment of Lec-5>>>>>>>>>>>>>>>>>>
+let sum: bigint = bigNumber + anotherBigInt;
+console.log(sum); // at the end n present
+console.log("sum-one" + sum); // at the end n is not present
+let difference: bigint = bigNumber - anotherBigInt;
+console.log(difference); // at the end n present
+console.log("difference-one" + difference); // at the end n is not present
+let divisible: bigint = bigNumber / anotherBigInt;
+console.log(divisible); // at the end n present
+console.log("divisible-one" + divisible); // at the end n is not present
+let multiply: bigint = bigNumber * anotherBigInt;
+console.log(multiply); // at the end n present
+console.log("multiply-one" + multiply); // at the end n is not present
