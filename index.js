@@ -1,24 +1,10 @@
 "use strict";
-const product1 = {
-    name: "samsung",
-    price: 20000,
-    quantity: 1,
-};
-const product2 = {
-    name: "vivo",
-    price: 2000,
-    quantity: 2,
-};
-const product3 = {
-    name: "xomi",
-    price: 3000,
-    quantity: 3,
-};
-function ProductDetails(product1) {
-    const { name, price, quantity } = product1;
-    let totalPrice = price * quantity;
-    console.log(`name of product is ${name},price is ${price} and quantity is ${quantity} and total price is ${totalPrice}`);
+function add(a, b) {
+    console.log(typeof a);
+    console.log(typeof b);
+    console.log(`this is value of a:  ${a} and value of b: ${b}`);
 }
-ProductDetails(product1);
-ProductDetails(product2);
-ProductDetails(product3);
+// add(10, 20);
+// add("ashishk", 20);
+add("ashishk", "book");
+add("ashishk", true);
