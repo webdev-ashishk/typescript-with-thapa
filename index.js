@@ -1,24 +1,38 @@
 "use strict";
-var employee = ["anjuK", 10];
-employee.push("ashishk", 20);
-console.log("current-emp length " + employee.length);
-console.log(employee);
-// employee.push(true, "120");
-employee.pop();
-console.log(employee);
-let produc1 = ["samsung", 10000, 10];
-let produc2 = ["xomi", 9000, 90];
-function displayProductInfo(produc1) {
-    const [name, price, stock] = produc1;
-    console.log(`name of the Product is ${name} , price is ${price} and stock is ${stock}`);
+// i have solve this question during lecture
+function differentAction(value) {
+    if (typeof value == "string") {
+        console.log(value.toUpperCase());
+    }
+    else if (typeof value == "number") {
+        var double = value * 2;
+        console.log(`type is number ${double}`);
+    }
 }
-displayProductInfo(produc1);
-displayProductInfo(produc2);
-let weather1 = ["lucknow", 30, "sunny"];
-let weather2 = ["delhi", 28, "rainy"];
-function displayWeather(weather1) {
-    const [city, temp, condition] = weather1;
-    console.log(`city name is ${city} , tempratue is ${temp} and weather condition is ${condition}`);
+var value1 = "how are you!!";
+var value2 = 20;
+differentAction(value2);
+differentAction(value1);
+// Assignment-Questions-1
+function formateTheValue(value) {
+    if (typeof value === "string") {
+        var f_letter = value.slice(0, 1).toUpperCase();
+        var remainingLetter = value.slice(1, value.length);
+        var captelFirstLetter = f_letter.concat(remainingLetter);
+        console.log(captelFirstLetter);
+    }
+    else if (typeof value === "number") {
+        var twoDecimalPlaces = value.toFixed(2);
+        console.log(twoDecimalPlaces);
+    }
+    else if (typeof value === "boolean") {
+        var boolean = value ? "yes" : "no";
+        console.log(boolean);
+    }
 }
-displayWeather(weather1);
-displayWeather(weather2);
+var value1 = "welcome to india";
+var value2 = 24.434343433434;
+var value3 = false;
+formateTheValue(value1);
+formateTheValue(value2);
+formateTheValue(value3);
