@@ -14,3 +14,11 @@ function displayProductInfo(produc1) {
 }
 displayProductInfo(produc1);
 displayProductInfo(produc2);
+let weather1 = ["lucknow", 30, "sunny"];
+let weather2 = ["delhi", 28, "rainy"];
+function displayWeather(weather1) {
+    const [city, temp, condition] = weather1;
+    console.log(`city name is ${city} , tempratue is ${temp} and weather condition is ${condition}`);
+}
+displayWeather(weather1);
+displayWeather(weather2);
