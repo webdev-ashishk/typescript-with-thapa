@@ -1,38 +1,24 @@
 "use strict";
-// i have solve this question during lecture
-function differentAction(value) {
-    if (typeof value == "string") {
-        console.log(value.toUpperCase());
-    }
-    else if (typeof value == "number") {
-        var double = value * 2;
-        console.log(`type is number ${double}`);
-    }
+const product1 = {
+    name: "samsung",
+    price: 20000,
+    quantity: 1,
+};
+const product2 = {
+    name: "vivo",
+    price: 2000,
+    quantity: 2,
+};
+const product3 = {
+    name: "xomi",
+    price: 3000,
+    quantity: 3,
+};
+function ProductDetails(product1) {
+    const { name, price, quantity } = product1;
+    let totalPrice = price * quantity;
+    console.log(`name of product is ${name},price is ${price} and quantity is ${quantity} and total price is ${totalPrice}`);
 }
-var value1 = "how are you!!";
-var value2 = 20;
-differentAction(value2);
-differentAction(value1);
-// Assignment-Questions-1
-function formateTheValue(value) {
-    if (typeof value === "string") {
-        var f_letter = value.slice(0, 1).toUpperCase();
-        var remainingLetter = value.slice(1, value.length);
-        var captelFirstLetter = f_letter.concat(remainingLetter);
-        console.log(captelFirstLetter);
-    }
-    else if (typeof value === "number") {
-        var twoDecimalPlaces = value.toFixed(2);
-        console.log(twoDecimalPlaces);
-    }
-    else if (typeof value === "boolean") {
-        var boolean = value ? "yes" : "no";
-        console.log(boolean);
-    }
-}
-var value1 = "welcome to india";
-var value2 = 24.434343433434;
-var value3 = false;
-formateTheValue(value1);
-formateTheValue(value2);
-formateTheValue(value3);
+ProductDetails(product1);
+ProductDetails(product2);
+ProductDetails(product3);
