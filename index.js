@@ -1,18 +1,13 @@
 "use strict";
-function add(a, b) {
-    console.log(typeof a);
-    console.log(typeof b);
-    console.log(`this is value of a:  ${a} and value of b: ${b}`);
+var arr = [10, 20, 30, 40, 50];
+var arr2 = ["anjuK", "deepika", "avdhesh"];
+var arr3 = [10, "deepika", "avdhesh"];
+for (let value of arr) {
+    console.log(value);
 }
-// add(10, 20);
-// add("ashishk", 20);
-add("ashishk", "book");
-add("ashishk", true);
-function emp(p) {
-    return p;
+for (let value of arr2) {
+    console.log(value);
 }
-console.log(emp("one"));
-console.log(emp(1234));
-console.log(emp({ name: "anjuK", location: "jharkhand" }));
-console.log(emp({ name: "anjuK", location: "jharkhand" }).name);
-console.log(emp({ name: "anjuK", location: "jharkhand" }).location);
+for (let value of arr3) {
+    console.log(value);
+}
