@@ -7,3 +7,12 @@ function add<T, U>(a: T, b: U) {
 // add("ashishk", 20);
 add("ashishk", "book");
 add("ashishk", true);
+
+function emp<T>(p: T): T {
+  return p;
+}
+console.log(emp("one"));
+console.log(emp(1234));
+console.log(emp({ name: "anjuK", location: "jharkhand" }));
+console.log(emp({ name: "anjuK", location: "jharkhand" }).name);
+console.log(emp({ name: "anjuK", location: "jharkhand" }).location);
