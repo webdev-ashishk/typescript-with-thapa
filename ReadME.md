@@ -17,6 +17,6 @@
 
 > "rootDir": "./src" /\*
 
-### outdir -> output of TS file present in .js file
+### outdir -> output of TS file present in dist file
 
 > "outDir": "./dist"
