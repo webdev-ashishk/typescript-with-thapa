@@ -2,14 +2,16 @@
 
 > tsc index.ts --watch
 
-# HOT resload for entire file
+# HOT Reload for src file
 
 > 1. tsc -w
 > 2. tsc -watch
 
-# Lib
+# Below all the setting Present in tsconfig file
 
 # Target
+
+> "ES2022"
 
 # rootdir -> All TS file present Here
 
