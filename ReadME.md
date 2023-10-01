@@ -13,10 +13,10 @@
 
 > "ES2022"
 
-### rootdir -> All TS file present Here
+### rootdir -> All TS file present in src file
 
 > "rootDir": "./src" /\*
 
-### outdir -> output of TS file cames Here
+### outdir -> output of TS file present in .js file
 
 > "outDir": "./dist"
