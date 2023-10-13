@@ -1,4 +1,16 @@
-let a = 10;
-let b = 20;
-const result = a + b;
-console.log(result + 100);
+function calculator(a: number, b: number, c: "add" | "mul" | "div" | "sub") {
+  if (c === "add") {
+    console.log(a + b);
+  } else if (c === "mul") {
+    console.log(a * b);
+  } else if (c === "div") {
+    console.log(a / b);
+  } else if (c === "sub") {
+    console.log(a - b);
+  }
+}
+
+console.log(calculator(4, 5, "add"));
+console.log(calculator(4, 5, "mul"));
+console.log(calculator(4, 5, "div"));
+console.log(calculator(4, 5, "sub"));
