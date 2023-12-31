@@ -45,7 +45,16 @@ function calculateArea(w, h) {
 }
 var area = calculateArea(10, 20);
 console.log("area is ".concat(area, " and type of area is :").concat(typeof area));
+// lec 10 ,11 and 12
 var nameArray = [20, 30, 40, 50, 60, 70, 80, 90, 100];
+var nameString = [
+    "name",
+    "santosh",
+    "deepika",
+    "anjuK",
+    "karan",
+    "avdhesh",
+];
 console.log("name of Array is ".concat(nameArray.length));
 console.log("type of name array is :", typeof nameArray);
 for (var _i = 0, nameArray_1 = nameArray; _i < nameArray_1.length; _i++) {
@@ -55,6 +64,33 @@ for (var _i = 0, nameArray_1 = nameArray; _i < nameArray_1.length; _i++) {
 for (var arrayResult2 in nameArray) {
     console.log("array result2 is ".concat(arrayResult2));
 }
-nameArray.map(function (element) { return console.log(element); });
+nameArray.map(function (element) {
+    var result = element * 2;
+    console.log(result);
+});
 var over80 = nameArray.filter(function (element) { return element > 80; });
 console.log("value over 80 in filtermethod: ".concat(over80));
+// print all the name of persons except deepika
+var filterName = nameString.filter(function (element) {
+    var filteredName = element === "deepika" ? "yes" : "no";
+    console.log(!filteredName, element);
+});
+var person = {
+    name: "anjuK",
+    branch: "cs",
+    address: {
+        city: "gorakpur",
+        village: "khushinagar",
+        pincode: 2012313,
+    },
+};
+console.log(person);
+var pincode = person.address.pincode;
+console.log("person pincode is ".concat(pincode));
+var product2 = {
+    name: "honda",
+    price: 100000,
+    quantity: 5,
+};
+product2.name = "hero";
+console.log(product2);

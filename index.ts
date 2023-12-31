@@ -54,8 +54,16 @@ function calculateArea(w: number, h: number) {
 const area = calculateArea(10, 20);
 console.log(`area is ${area} and type of area is :${typeof area}`);
 
+// lec 10 ,11 and 12
 const nameArray: number[] = [20, 30, 40, 50, 60, 70, 80, 90, 100];
-
+const nameString: string[] = [
+  "name",
+  "santosh",
+  "deepika",
+  "anjuK",
+  "karan",
+  "avdhesh",
+];
 console.log(`name of Array is ${nameArray.length}`);
 console.log("type of name array is :", typeof nameArray);
 
@@ -66,6 +74,57 @@ for (const arrayResult2 in nameArray) {
   console.log(`array result2 is ${arrayResult2}`);
 }
 
-nameArray.map((element) => console.log(element));
+nameArray.map((element) => {
+  const result = element * 2;
+  console.log(result);
+});
 const over80 = nameArray.filter((element) => element > 80);
 console.log(`value over 80 in filtermethod: ${over80}`);
+
+// print all the name of persons except deepika
+const filterName = nameString.filter((element: unknown) => {
+  const filteredName: string = element === "deepika" ? "yes" : "no";
+  console.log(!filteredName, element);
+});
+
+// lec 13
+type Person = {
+  name: string;
+  branch: string;
+  address: {
+    city: string;
+    village: string;
+    pincode?: number;
+  };
+};
+const person: Person = {
+  name: "anjuK",
+  branch: "cs",
+  address: {
+    city: "gorakpur",
+    village: "khushinagar",
+    pincode: 2012313,
+  },
+};
+
+console.log(person);
+const {
+  address: { pincode },
+} = person;
+console.log(`person pincode is ${pincode}`);
+
+type Product = {
+  name: string;
+  price: number;
+  quantity: number;
+};
+
+const product2: Product = {
+  name: "honda",
+  price: 100000,
+  quantity: 5,
+};
+product2.name = "hero";
+console.log(product2);
+
+
